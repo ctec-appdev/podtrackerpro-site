@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PODTrackerPRO — Research Smarter. Design Better.</title>
+<meta name="description" content="PODTrackerPRO helps POD creators research niches faster with DCEB scoring—so you can build brands with meaning. Start free.">
+<link rel="canonical" href="https://www.podtrackerpro.com/index_alt_2.html">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:    #0A0E27;
+    --surface: #0D1530;
+    --card:    #111B3C;
+    --blue:    #2964CD;
+    --sky:     #5B9BFF;
+    --muted:   #7A9AD4;
+    --slate:   #4A4A4A;
+    --white:   #FFFFFF;
+    --green:   #1D9E75;
+    --amber:   #BA7517;
+    --red:     #A32D2D;
+    --pearl:   #F2F4FA;
+    --border:  rgba(91,155,255,0.15);
+    --border-light: rgba(41,100,205,0.12);
+    --glow:    rgba(41,100,205,0.3);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background: rgba(10,14,39,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+  }
+
+  .nav-icon {
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, #1B2E6E 0%, #2964CD 100%);
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(91,155,255,0.35);
+    flex-shrink: 0;
+  }
+
+  .nav-wordmark {
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1;
+  }
+
+  .nav-wordmark span { color: var(--sky); }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-ghost {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--white); border-color: rgba(91,155,255,0.4); }
+
+  .btn-primary {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    padding: 9px 22px;
+    border-radius: 7px;
+    background: var(--blue);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 18px rgba(41,100,205,0.35);
+  }
+
+  .btn-primary:hover { background: #3571e0; box-shadow: 0 0 24px rgba(41,100,205,0.5); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 60px 80px;
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 70% 40%, rgba(41,100,205,0.18) 0%, transparent 65%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(41,100,205,0.08) 0%, transparent 60%);
+  }
+
+  .dot-grid {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(91,155,255,0.18) 1px, transparent 1px);
+    background-size: 38px 38px;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-left {}
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(41,100,205,0.12);
+    border: 1px solid rgba(91,155,255,0.25);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--sky);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--sky);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .hero h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 58px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 .accent-blue { color: var(--sky); }
+
+  .hero-sub {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.3;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-body {
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 460px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-hero-primary {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 9px;
+    background: var(--blue);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 28px rgba(41,100,205,0.45);
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-hero-primary:hover { background: #3571e0; box-shadow: 0 0 38px rgba(41,100,205,0.6); transform: translateY(-1px); }
+
+  .btn-hero-secondary {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 9px;
+    border: 1px solid var(--border);
+    transition: all 0.2s;
+  }
+
+  .btn-hero-secondary:hover { color: var(--white); border-color: rgba(91,155,255,0.4); }
+
+  .hero-trust {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-trust-text {
+    font-size: 13px;
+    color: var(--muted);
+    opacity: 0.7;
+  }
+
+  /* Hero right — mock UI */
+  .hero-right {
+    position: relative;
+  }
+
+  .hero-ui-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: perspective(1000px) rotateY(-4deg) rotateX(2deg);
+  }
+
+  .ui-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ui-panel::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(91,155,255,0.4), transparent);
+  }
+
+  .ui-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ui-panel-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .ui-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .badge-yes  { background: rgba(29,158,117,0.15); color: #4DFFC0; border: 1px solid rgba(29,158,117,0.35); }
+  .badge-maybe{ background: rgba(186,117,23,0.15); color: #F5C066; border: 1px solid rgba(186,117,23,0.35); }
+  .badge-no   { background: rgba(163,45,45,0.15);  color: #FF8080; border: 1px solid rgba(163,45,45,0.35); }
+  .badge-blue { background: rgba(41,100,205,0.15); color: var(--sky); border: 1px solid rgba(91,155,255,0.3); }
+
+  .ui-niche-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .ui-niche-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .ui-score-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+
+  .ui-score-label {
+    font-size: 11px;
+    color: var(--muted);
+    width: 90px;
+    flex-shrink: 0;
+  }
+
+  .ui-bar-wrap {
+    flex: 1;
+    height: 5px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .ui-bar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease;
+  }
+
+  .bar-blue  { background: var(--blue); }
+  .bar-sky   { background: var(--sky); }
+  .bar-green { background: var(--green); }
+  .bar-amber { background: var(--amber); }
+
+  .ui-score-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--white);
+    width: 28px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .ui-composite {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ui-composite-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .ui-composite-score {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4DFFC0;
+  }
+
+  /* second panel — keyword list */
+  .ui-kw-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(91,155,255,0.08);
+  }
+
+  .ui-kw-row:last-child { border-bottom: none; }
+
+  .ui-kw-text {
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+  }
+
+  .ui-kw-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .ui-kw-vol {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* floating accent card */
+  .hero-accent-card {
+    position: absolute;
+    top: -20px;
+    right: -24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.4);
+  }
+
+  .accent-card-icon {
+    width: 32px; height: 32px;
+    background: rgba(29,158,117,0.2);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .accent-card-text strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .accent-card-text span {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  /* corner glow on hero panels */
+  .panel-glow {
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 160px; height: 160px;
+    background: radial-gradient(circle, rgba(41,100,205,0.2) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* ── SECTION SHARED ── */
+  section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--blue);
+    border-radius: 2px;
+  }
+
+  .section-headline {
+    font-family: 'Rubik', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin-bottom: 16px;
+  }
+
+  .section-subhead {
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 560px;
+    margin-bottom: 56px;
+  }
+
+  /* ── ANTI-AI-SLOP SECTION ── */
+  .anti-slop {
+    padding: 120px 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .anti-slop-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .anti-slop-left {}
+
+  .anti-slop-body {
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .anti-slop-body em {
+    color: var(--white);
+    font-style: italic;
+  }
+
+  .anti-slop-subhead {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+  }
+
+  /* Anti-slop right visual */
+  .anti-slop-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .compare-block {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--card);
+    margin-bottom: 14px;
+  }
+
+  .compare-header {
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .compare-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  .compare-header-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .compare-body {
+    padding: 16px 18px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .compare-bad {
+    background: rgba(163,45,45,0.06);
+    border-color: rgba(163,45,45,0.2);
+  }
+
+  .compare-bad .compare-header {
+    background: rgba(163,45,45,0.08);
+    border-color: rgba(163,45,45,0.15);
+  }
+
+  .compare-bad .compare-dot { background: #A32D2D; }
+  .compare-bad .compare-header-text { color: #FF8080; }
+  .compare-bad .compare-body { color: rgba(255,128,128,0.7); }
+
+  .compare-good {
+    background: rgba(29,158,117,0.06);
+    border-color: rgba(29,158,117,0.2);
+  }
+
+  .compare-good .compare-header {
+    background: rgba(29,158,117,0.08);
+    border-color: rgba(29,158,117,0.15);
+  }
+
+  .compare-good .compare-dot { background: #1D9E75; }
+  .compare-good .compare-header-text { color: #4DFFC0; }
+  .compare-good .compare-body { color: rgba(255,255,255,0.75); }
+
+  .vs-divider {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.2em;
+    margin: 2px 0 12px;
+    opacity: 0.5;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how-it-works {
+    padding: 120px 0;
+    background: var(--navy);
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    position: relative;
+  }
+
+  /* connector line between steps */
+  .steps-grid::before {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: calc(33.33% - 10px);
+    right: calc(33.33% - 10px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), var(--blue), var(--border), transparent);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .step-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px 28px;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .step-card:hover {
+    border-color: rgba(91,155,255,0.35);
+    transform: translateY(-4px);
+  }
+
+  .step-number {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--blue);
+    border: 2px solid rgba(91,155,255,0.5);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(41,100,205,0.5);
+  }
+
+  .step-headline {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    margin-bottom: 12px;
+  }
+
+  .step-body {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  .step-visual {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 18px;
+  }
+
+  .step-visual-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+
+  .step-visual-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+
+  .step-visual-text { font-size: 11px; color: var(--muted); }
+  .step-visual-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--white);
+  }
+
+  .how-cta {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  /* ── SOCIAL PROOF ── */
+  .social-proof {
+    padding: 120px 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .testimonial-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(91,155,255,0.3), transparent);
+  }
+
+  .testimonial-card:hover {
+    border-color: rgba(91,155,255,0.3);
+    transform: translateY(-3px);
+  }
+
+  .testimonial-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 16px;
+  }
+
+  .star {
+    width: 14px; height: 14px;
+    color: #F5C066;
+    fill: #F5C066;
+  }
+
+  .testimonial-quote {
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 22px;
+    opacity: 0.9;
+  }
+
+  .testimonial-quote::before {
+    content: '"';
+    color: var(--blue);
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+    line-height: 0;
+    vertical-align: -12px;
+    margin-right: 4px;
+    font-weight: 800;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .testimonial-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1B2E6E 0%, #2964CD 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+    border: 2px solid rgba(91,155,255,0.3);
+  }
+
+  .testimonial-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .testimonial-handle {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .stat-block {
+    background: var(--card);
+    padding: 36px 40px;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .stat-block:hover { background: rgba(41,100,205,0.08); }
+
+  .stat-number {
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-number span { color: var(--sky); }
+
+  .stat-label {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.4;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  /* ── PRICING PREVIEW ── */
+  .pricing-preview {
+    padding: 120px 0;
+    background: var(--navy);
+  }
+
+  .plans-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 56px;
+  }
+
+  .plan-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .plan-card:hover {
+    border-color: rgba(91,155,255,0.3);
+    transform: translateY(-4px);
+  }
+
+  .plan-card.featured {
+    border-color: var(--blue);
+    background: linear-gradient(160deg, rgba(41,100,205,0.12) 0%, var(--surface) 100%);
+  }
+
+  .plan-card.featured::before {
+    content: 'MOST POPULAR';
+    position: absolute;
+    top: -11px; left: 50%; transform: translateX(-50%);
+    background: var(--blue);
+    color: var(--white);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    padding: 3px 12px;
+    border-radius: 20px;
+  }
+
+  .plan-name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .plan-price {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .plan-price sup {
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: top;
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  .plan-period {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+
+  .plan-divider {
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 20px;
+  }
+
+  .plan-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .plan-features li {
+    font-size: 14px;
+    color: var(--muted);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.4;
+  }
+
+  .plan-features li.active { color: var(--white); }
+
+  .feature-check {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .feature-check.on { background: rgba(29,158,117,0.2); }
+  .feature-check.off { background: rgba(255,255,255,0.05); }
+
+  .plan-cta {
+    display: block;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: var(--blue);
+    transition: all 0.2s;
+    box-shadow: 0 0 16px rgba(41,100,205,0.3);
+  }
+
+  .plan-cta:hover { background: #3571e0; box-shadow: 0 0 24px rgba(41,100,205,0.5); }
+
+  .plan-cta.secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    box-shadow: none;
+  }
+
+  .plan-cta.secondary:hover { border-color: rgba(91,155,255,0.35); color: var(--white); }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    padding: 120px 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .final-cta-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(41,100,205,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .final-cta-inner { position: relative; z-index: 2; }
+
+  .final-headline {
+    font-family: 'Rubik', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto; margin-right: auto;
+  }
+
+  .final-headline .accent { color: var(--sky); }
+
+  .final-sub {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 440px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+
+  .final-ctas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    border-top: 1px solid var(--border);
+    padding: 48px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .footer-logo-area { display: flex; align-items: center; gap: 12px; }
+
+  .footer-tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+    letter-spacing: 0.04em;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--white); }
+
+  .footer-copy {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    opacity: 0.5;
+  }
+
+  /* ── ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-up-delay-1 { transition-delay: 0.1s; }
+  .fade-up-delay-2 { transition-delay: 0.2s; }
+  .fade-up-delay-3 { transition-delay: 0.3s; }
+
+  /* ── RESPONSIVE (basic) ── */
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 24px 60px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+    .hero h1 { font-size: 42px; }
+    .anti-slop-inner { grid-template-columns: 1fr; gap: 48px; padding: 0 24px; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .steps-grid::before { display: none; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .stats-bar { grid-template-columns: 1fr; }
+    .plans-row { grid-template-columns: 1fr; }
+    .section-inner { padding: 0 24px; }
+    .how-it-works, .social-proof, .pricing-preview, .final-cta { padding: 80px 0; }
+    .anti-slop { padding: 80px 0; }
+    .section-headline { font-size: 32px; }
+    footer { flex-direction: column; gap: 24px; padding: 36px 24px; text-align: center; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
+    .hero-right { display: none; }
+  }
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQ4XZV2HN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JXQ4XZV2HN');
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="16" width="3" height="6" rx="1" fill="#5B9BFF"/>
+        <rect x="7" y="11" width="3" height="11" rx="1" fill="#5B9BFF"/>
+        <rect x="12" y="7" width="3" height="15" rx="1" fill="#5B9BFF"/>
+        <rect x="17" y="3" width="3" height="19" rx="1" fill="#5B9BFF"/>
+        <path d="M4 8L9 5L14 6.5L20 2" stroke="#5B9BFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="20" cy="2" r="1.5" fill="#5B9BFF"/>
+      </svg>
+    </div>
+    <div class="nav-wordmark">PODTracker<span>PRO</span></div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="features.html">Docs</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <a href="https://app.podtrackerpro.com/api/auth/signin?callbackUrl=%2Fdashboard" class="btn-ghost">Log in</a>
+    <a href="https://app.podtrackerpro.com/signup" class="btn-primary">Start free</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="dot-grid"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">The POD Research Platform</div>
+
+      <h1>Research is the<br><span class="accent-blue">bottleneck.</span></h1>
+
+      <p class="hero-sub">The POD market is crowded. Winners research smarter, not harder.</p>
+
+      <p class="hero-body">AI can synthesize data. Only you can create emotional truth. PODTrackerPRO accelerates your research so you can focus on what humans do best — building a brand only you can build.<br><br>Whether you're starting out or scaling, the niche that wins is the one you understand deeply. We give you the research edge. Everything else is execution.</p>
+
+      <div class="hero-ctas">
+        <a href="https://app.podtrackerpro.com/signup" class="btn-hero-primary">
+          Find your niche
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://app.podtrackerpro.com/signup" class="btn-hero-secondary">Start free</a>
+      </div>
+
+      <div class="hero-trust">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L8.8 5.2H13.4L9.8 7.9L11.1 12.2L7 9.5L2.9 12.2L4.2 7.9L0.6 5.2H5.2L7 1Z" fill="#1D9E75" opacity="0.7"/></svg>
+        <span class="hero-trust-text">Free plan — no credit card required. Starter from $9.99/mo.</span>
+      </div>
+    </div>
+
+    <!-- Hero right: mock UI -->
+    <div class="hero-right">
+      <!-- Floating accent card -->
+      <div class="hero-accent-card">
+        <div class="accent-card-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2L11 7H16L12 10.5L13.5 16L9 13L4.5 16L6 10.5L2 7H7L9 2Z" fill="#4DFFC0"/></svg>
+        </div>
+        <div class="accent-card-text">
+          <strong>Niche validated</strong>
+          <span>DCEB score: 8.07 — YES</span>
+        </div>
+      </div>
+
+      <div class="hero-ui-stack">
+        <!-- DCEB Panel -->
+        <div class="ui-panel">
+          <div class="panel-glow"></div>
+          <div class="ui-panel-header">
+            <span class="ui-panel-title">DCEB Score — Hiking Apparel</span>
+            <span class="ui-badge badge-yes">YES</span>
+          </div>
+          <div class="ui-score-row">
+            <span class="ui-score-label">Demand</span>
+            <div class="ui-bar-wrap"><div class="ui-bar bar-blue" style="width:82%"></div></div>
+            <span class="ui-score-num">8.2</span>
+          </div>
+          <div class="ui-score-row">
+            <span class="ui-score-label">Competition</span>
+            <div class="ui-bar-wrap"><div class="ui-bar bar-sky" style="width:71%"></div></div>
+            <span class="ui-score-num">7.1</span>
+          </div>
+          <div class="ui-score-row">
+            <span class="ui-score-label">Evergreen</span>
+            <div class="ui-bar-wrap"><div class="ui-bar bar-green" style="width:90%"></div></div>
+            <span class="ui-score-num">9.0</span>
+          </div>
+          <div class="ui-score-row">
+            <span class="ui-score-label">Brandability</span>
+            <div class="ui-bar-wrap"><div class="ui-bar bar-amber" style="width:78%"></div></div>
+            <span class="ui-score-num">7.8</span>
+          </div>
+          <div class="ui-composite">
+            <div>
+              <div class="ui-composite-label">Composite Score</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);margin-top:2px;">D×0.30 + C×0.25 + E×0.25 + B×0.20</div>
+            </div>
+            <span class="ui-composite-score">8.07</span>
+          </div>
+        </div>
+
+        <!-- Keywords Panel -->
+        <div class="ui-panel">
+          <div class="ui-panel-header">
+            <span class="ui-panel-title">Top Keywords — Hiking Apparel</span>
+            <span class="ui-badge badge-blue">AI</span>
+          </div>
+          <div class="ui-kw-row">
+            <span class="ui-kw-text">hiking shirt funny</span>
+            <div class="ui-kw-meta">
+              <span class="ui-kw-vol">Vol: High</span>
+              <span class="ui-badge badge-yes">↑</span>
+            </div>
+          </div>
+          <div class="ui-kw-row">
+            <span class="ui-kw-text">trail running gift</span>
+            <div class="ui-kw-meta">
+              <span class="ui-kw-vol">Vol: Mid</span>
+              <span class="ui-badge badge-blue">→</span>
+            </div>
+          </div>
+          <div class="ui-kw-row">
+            <span class="ui-kw-text">hike more worry less tee</span>
+            <div class="ui-kw-meta">
+              <span class="ui-kw-vol">Vol: High</span>
+              <span class="ui-badge badge-yes">↑</span>
+            </div>
+          </div>
+          <div class="ui-kw-row">
+            <span class="ui-kw-text">mountain enthusiast apparel</span>
+            <div class="ui-kw-meta">
+              <span class="ui-kw-vol">Vol: Low</span>
+              <span class="ui-badge badge-maybe">~</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ANTI-AI-SLOP ══ -->
+<section class="anti-slop" id="anti-slop">
+  <div class="anti-slop-inner">
+    <div class="anti-slop-left fade-up">
+      <div class="section-label">Why it matters</div>
+      <h2 class="section-headline" style="color:var(--white);margin-bottom:18px;">Your designs shouldn't sound like everyone else's.</h2>
+      <h3 class="anti-slop-subhead">The designs that sell are made by creators who understand their audience. Not generated by algorithms.</h3>
+
+      <p class="anti-slop-body">The AI-generated design trend? It's flooding the market with noise. Thousands of designs nobody wants because they don't <em>mean</em> anything.</p>
+      <p class="anti-slop-body">But you're different. Your perspective has power. Your designs have emotional truth.</p>
+      <p class="anti-slop-body">That's what we protect. PODTrackerPRO gives you the research to own your niche — to find the audience that only you can serve. We accelerate the boring part (research). We stay out of the way on the creative part (meaning).</p>
+      <p class="anti-slop-body">Build a POD brand, not another side hustle. Build something that sells because it <em>connects</em>.</p>
+
+      <a href="https://app.podtrackerpro.com/signup" class="btn-hero-primary" style="margin-top:28px;display:inline-flex;align-items:center;gap:8px;font-size:15px;padding:13px 28px;">
+        Start free
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="anti-slop-visual fade-up fade-up-delay-2">
+      <div class="compare-block compare-bad">
+        <div class="compare-header">
+          <div class="compare-dot"></div>
+          <span class="compare-header-text">AI-generated noise</span>
+        </div>
+        <div class="compare-body">
+          Generic. Forgettable. 10,000 versions of the same design uploaded by 1,000 different stores. No emotional connection. No repeat buyers. No brand.
+        </div>
+      </div>
+      <div class="vs-divider">VS</div>
+      <div class="compare-block compare-good">
+        <div class="compare-header">
+          <div class="compare-dot"></div>
+          <span class="compare-header-text">Research-backed creativity</span>
+        </div>
+        <div class="compare-body">
+          You understand your niche deeply. Your designs reflect that understanding. Buyers feel seen. They come back. They recommend you. That's a brand — and only you can build it.
+        </div>
+      </div>
+
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-top:14px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">Our positioning</div>
+        <p style="font-size:13px;color:var(--white);line-height:1.6;font-style:italic;">"AI accelerates research. Humans create meaning."</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:6px;">— PODTrackerPRO brand north star</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">How it works</div>
+      <h2 class="section-headline">From niche confusion to confident designs in three steps.</h2>
+      <p class="section-subhead">No more guessing. No more wasted hours. Just a clear path from research to revenue.</p>
+    </div>
+
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card fade-up">
+        <div class="step-number">1</div>
+        <div class="step-headline">Search any niche. Get instant DCEB scoring.</div>
+        <p class="step-body">Type a niche — any niche — and PODTrackerPRO returns a DCEB score in seconds. Demand, Competition, Evergreen potential, Brandability. Four signals. One clear verdict. Score 8 or above? You're ready to design.</p>
+        <div class="step-visual">
+          <div class="step-visual-label">Live result — "Nursing Humor"</div>
+          <div class="step-visual-row">
+            <span class="step-visual-text">Demand</span>
+            <span class="step-visual-value">8.5</span>
+          </div>
+          <div class="step-visual-row">
+            <span class="step-visual-text">Competition</span>
+            <span class="step-visual-value">6.9</span>
+          </div>
+          <div class="step-visual-row">
+            <span class="step-visual-text">Evergreen</span>
+            <span class="step-visual-value">9.2</span>
+          </div>
+          <div class="step-visual-row">
+            <span class="step-visual-text">Brandability</span>
+            <span class="step-visual-value">8.1</span>
+          </div>
+          <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:11px;color:var(--muted);">Verdict</span>
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#4DFFC0;font-weight:600;">✓ YES — 8.32</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card fade-up fade-up-delay-1">
+        <div class="step-number">2</div>
+        <div class="step-headline">Filter for winners. Ignore the rest.</div>
+        <p class="step-body">Run 50 niches in the time it used to take you to research one. Sort by score. Filter by category. Shortlist your top three. You're not guessing anymore — you're making data-backed decisions before you open a design file.</p>
+        <div class="step-visual">
+          <div class="step-visual-label">Niche Tracker — sorted by score</div>
+          <div class="step-visual-row">
+            <span class="step-visual-text">Nursing Humor</span>
+            <span class="ui-badge badge-yes" style="font-size:9px;">8.32 YES</span>
+          </div>
+          <div class="step-visual-row" style="margin-top:6px;">
+            <span class="step-visual-text">Fishing Dad Jokes</span>
+            <span class="ui-badge badge-yes" style="font-size:9px;">7.89 YES</span>
+          </div>
+          <div class="step-visual-row" style="margin-top:6px;">
+            <span class="step-visual-text">Camping Minimalist</span>
+            <span class="ui-badge badge-maybe" style="font-size:9px;">6.41 MAYBE</span>
+          </div>
+          <div class="step-visual-row" style="margin-top:6px;">
+            <span class="step-visual-text">Generic Coffee Tees</span>
+            <span class="ui-badge badge-no" style="font-size:9px;">4.2 NO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card fade-up fade-up-delay-2">
+        <div class="step-number">3</div>
+        <div class="step-headline">Design with confidence. Build a brand that sticks.</div>
+        <p class="step-body">When you know a niche is validated, you design differently. You commit. You build a coherent brand instead of testing random ideas. Your designs connect because you understand exactly who you're designing for.</p>
+        <div class="step-visual">
+          <div class="step-visual-label">Design Brief — generated</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:6px;">Niche: Nursing Humor</div>
+          <div style="font-size:11px;color:var(--white);margin-bottom:4px;">Style: Witty + Caring</div>
+          <div style="font-size:11px;color:var(--white);margin-bottom:4px;">Slogan angle: "Saving lives, one shift at a time"</div>
+          <div style="font-size:11px;color:var(--white);">Platform: Amazon Merch + Etsy</div>
+          <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--sky);">SEO COPY READY — 2 platforms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-cta fade-up">
+      <a href="https://app.podtrackerpro.com/signup" class="btn-hero-primary" style="font-size:15px;padding:14px 36px;">
+        Try free — no credit card required
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL PROOF ══ -->
+<section class="social-proof" id="social-proof">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">What creators are saying</div>
+      <h2 class="section-headline">From wasted effort to validated niches.</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <!-- T1 -->
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+        </div>
+        <p class="testimonial-quote">I spent three months guessing at niches. One afternoon with PODTrackerPRO and I had five validated options ranked by score. I wish I'd had this on day one.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JM</div>
+          <div>
+            <div class="testimonial-name">Jordan M.</div>
+            <div class="testimonial-handle">POD creator · $4K/month</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T2 -->
+      <div class="testimonial-card fade-up fade-up-delay-1">
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+        </div>
+        <p class="testimonial-quote">The DCEB framework sounds simple, but it changes how you think. Now I don't design anything without validating first. My conversion rate went up and my design time went down.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AR</div>
+          <div>
+            <div class="testimonial-name">Alex R.</div>
+            <div class="testimonial-handle">Etsy + Redbubble seller</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- T3 -->
+      <div class="testimonial-card fade-up fade-up-delay-2">
+        <div class="testimonial-stars">
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+          <svg class="star" viewBox="0 0 14 14"><path d="M7 1l1.8 4.2H13l-3.4 2.7 1.3 4.3L7 9.5l-3.9 2.7 1.3-4.3L1 5.2h4.2L7 1z"/></svg>
+        </div>
+        <p class="testimonial-quote">I was burning out trying to keep up with trends. PODTrackerPRO helped me find two evergreen niches I could own long-term. Now I work fewer hours and make more per design.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">CT</div>
+          <div>
+            <div class="testimonial-name">Casey T.</div>
+            <div class="testimonial-handle">Full-time job + POD side biz</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="stats-bar fade-up">
+      <div class="stat-block">
+        <div class="stat-number">500<span>+</span></div>
+        <div class="stat-label">Creators in early access</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">8.5<span>/10</span></div>
+        <div class="stat-label">Average DCEB score of top-performing niches found on platform</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">40<span>hrs</span></div>
+        <div class="stat-label">Average research time saved per quarter (Pro users)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRICING ══ -->
+<section class="pricing-preview" id="pricing">
+  <div class="section-inner">
+    <div class="fade-up">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-headline">Start free. Scale when you're ready.</h2>
+      <p class="section-subhead">No lock-in. No credit card for the free plan. Upgrade when PODTrackerPRO earns its keep.</p>
+    </div>
+
+    <div class="plans-row">
+      <!-- Free -->
+      <div class="plan-card fade-up">
+        <div class="plan-name">Free</div>
+        <div class="plan-price">$0</div>
+        <div class="plan-period">Forever free</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Manual DCEB builder
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Niche, keyword & trend tracking
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Manual design briefs
+          </li>
+          <li>
+            <span class="feature-check off"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2l-4 4" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+            AI DCEB auto-score
+          </li>
+          <li>
+            <span class="feature-check off"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2l-4 4" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+            AI keyword research
+          </li>
+        </ul>
+        <a href="https://app.podtrackerpro.com/signup" class="plan-cta secondary">Get started free</a>
+      </div>
+
+      <!-- Starter -->
+      <div class="plan-card featured fade-up fade-up-delay-1">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price"><sup>$</sup>9.99</div>
+        <div class="plan-period">per month</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Everything in Free
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            AI DCEB auto-score
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            AI keyword research
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            AI SEO listing copy
+          </li>
+          <li>
+            <span class="feature-check off"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2l-4 4" stroke="rgba(255,255,255,0.2)" stroke-width="1.2" stroke-linecap="round"/></svg></span>
+            AI trend scan
+          </li>
+        </ul>
+        <a href="https://app.podtrackerpro.com/signup" class="plan-cta">Start for $9.99/mo</a>
+      </div>
+
+      <!-- Business -->
+      <div class="plan-card fade-up fade-up-delay-2">
+        <div class="plan-name">Business</div>
+        <div class="plan-price"><sup>$</sup>19.99</div>
+        <div class="plan-period">per month</div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Everything in Starter
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            AI trend scan
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            AI design brief generation
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Bulk research + priority support
+          </li>
+          <li class="active">
+            <span class="feature-check on"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#4DFFC0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Deeper competitor analysis
+          </li>
+        </ul>
+        <a href="https://app.podtrackerpro.com/signup" class="plan-cta secondary">Go Business</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="final-cta">
+  <div class="final-cta-bg"></div>
+  <div class="section-inner final-cta-inner fade-up">
+    <h2 class="final-headline">Build the brand only <span class="accent">you</span> can build.</h2>
+    <p class="final-sub">Start free. Research smarter from day one. No credit card required.</p>
+    <div class="final-ctas">
+      <a href="https://app.podtrackerpro.com/signup" class="btn-hero-primary" style="font-size:16px;padding:15px 36px;">
+        Find your niche
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="pricing.html" class="btn-hero-secondary" style="font-size:15px;padding:15px 28px;">View pricing</a>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--muted);font-family:'IBM Plex Mono',monospace;opacity:0.6;">podtrackerpro.com</p>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-logo-area">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      <div class="nav-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <rect x="2" y="16" width="3" height="6" rx="1" fill="#5B9BFF"/>
+          <rect x="7" y="11" width="3" height="11" rx="1" fill="#5B9BFF"/>
+          <rect x="12" y="7" width="3" height="15" rx="1" fill="#5B9BFF"/>
+          <rect x="17" y="3" width="3" height="19" rx="1" fill="#5B9BFF"/>
+        </svg>
+      </div>
+      <div class="nav-wordmark" style="font-size:16px;">PODTracker<span>PRO</span></div>
+    </a>
+    <div style="margin-left:4px;">
+      <div class="footer-tagline">AI accelerates research. Humans create meaning.</div>
+    </div>
+  </div>
+
+  <ul class="footer-links">
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="features.html">Docs</a></li>
+    <li><a href="contact.html">Support</a></li>
+  </ul>
+
+  <span class="footer-copy">© 2026 PODTrackerPRO</span>
+</footer>
+
+<script>
+  // Scroll-triggered fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Nav scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      nav.style.background = 'rgba(10,14,39,0.97)';
+    } else {
+      nav.style.background = 'rgba(10,14,39,0.85)';
+    }
+  });
+</script>
+</body>
+</html>

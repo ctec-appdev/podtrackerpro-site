@@ -1,0 +1,26 @@
+{
+  "name": "podtrackerpro-site",
+  "version": "1.0.0",
+  "description": "Static marketing site for PODTrackerPRO (HTML, CSS, JS, optional PHP contact handler).",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:links": "playwright test tests/links.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctec-appdev/podtrackerpro-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ctec-appdev/podtrackerpro-site/issues"
+  },
+  "homepage": "https://github.com/ctec-appdev/podtrackerpro-site#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "http-server": "^14.1.1"
+  }
+}

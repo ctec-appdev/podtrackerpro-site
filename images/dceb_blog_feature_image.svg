@@ -1,0 +1,175 @@
+<svg width="100%" viewBox="0 0 1200 685" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E27;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0D1530;stop-opacity:1"/>
+    </linearGradient>
+  <mask id="imagine-text-gaps-g3b9bt" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="1200" height="685" fill="white"/><rect x="225.3880157470703" y="29.66666603088379" width="749.2239379882812" height="64" fill="black" rx="2"/><rect x="253.8125" y="111.33332824707031" width="692.375" height="30.66666603088379" fill="black" rx="2"/><rect x="182.79689025878906" y="204.66665649414062" width="34.66666603088379" height="59" fill="black" rx="2"/><rect x="156.54689025878906" y="289.6666564941406" width="86.90625" height="27.333332061767578" fill="black" rx="2"/><rect x="96" y="329.66668701171875" width="124.61457824707031" height="116.66665649414062" fill="black" rx="2"/><rect x="144.30731201171875" y="511.33331298828125" width="111.38541412353516" height="19" fill="black" rx="2"/><rect x="462.796875" y="204.66665649414062" width="34.40625" height="59" fill="black" rx="2"/><rect x="417.6666564941406" y="289.6666564941406" width="124.66666412353516" height="27.333332061767578" fill="black" rx="2"/><rect x="374.3333435058594" y="329.66668701171875" width="138.70309448242188" height="116.66665649414062" fill="black" rx="2"/><rect x="424.3072814941406" y="511.33331298828125" width="111.38541412353516" height="19" fill="black" rx="2"/><rect x="742.7969360351562" y="204.66665649414062" width="34.40625" height="59" fill="black" rx="2"/><rect x="707.080810546875" y="289.6666564941406" width="105.83853912353516" height="27.333332061767578" fill="black" rx="2"/><rect x="654.3333740234375" y="329.66668701171875" width="140.68231201171875" height="116.66665649414062" fill="black" rx="2"/><rect x="704.307373046875" y="511.33331298828125" width="111.38541412353516" height="19" fill="black" rx="2"/><rect x="1022.796875" y="204.66665649414062" width="34.66666603088379" height="59" fill="black" rx="2"/><rect x="978.2005004882812" y="289.6666564941406" width="124.11978912353516" height="27.333332061767578" fill="black" rx="2"/><rect x="936" y="329.66668701171875" width="151.0728759765625" height="116.66665649414062" fill="black" rx="2"/><rect x="984.3072509765625" y="511.33331298828125" width="111.38541412353516" height="19" fill="black" rx="2"/><rect x="295.53125" y="616.3333129882812" width="608.91650390625" height="24" fill="black" rx="2"/><rect x="1023.7603759765625" y="31.333335876464844" width="100.89825439453125" height="19" fill="black" rx="2"/><rect x="1001.2083129882812" y="50" width="123.95356750488281" height="15.666666030883789" fill="black" rx="2"/></mask></defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Subtle accent grid lines -->
+  <line x1="60" y1="60" x2="60" y2="615" stroke="#2964CD" stroke-width="0.5" opacity="0.15" style="fill:rgb(0, 0, 0);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="1140" y1="60" x2="1140" y2="615" stroke="#2964CD" stroke-width="0.5" opacity="0.15" style="fill:rgb(0, 0, 0);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="60" y1="60" x2="1140" y2="60" stroke="#2964CD" stroke-width="0.5" opacity="0.15" mask="url(#imagine-text-gaps-g3b9bt)" style="fill:rgb(0, 0, 0);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="60" y1="615" x2="1140" y2="615" stroke="#2964CD" stroke-width="0.5" opacity="0.15" style="fill:rgb(0, 0, 0);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  
+  <!-- Main headline -->
+  <text x="600" y="80" font-size="54" font-weight="bold" text-anchor="middle" fill="#FFFFFF" font-family="Syne, Arial, sans-serif" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Syne, Arial, sans-serif;font-size:54px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+    Master the DCEB Framework
+  </text>
+  
+  <!-- Subheadline -->
+  <text x="600" y="135" font-size="24" text-anchor="middle" fill="#5B9BFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:24px;font-weight:400;text-anchor:middle;dominant-baseline:auto">
+    Research like a pro. Find profitable niches in minutes, not hours.
+  </text>
+  
+  <!-- Four pillars section -->
+  <!-- D - Demand -->
+  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Card background -->
+    <rect x="80" y="190" width="240" height="380" rx="12" fill="#0D1530" stroke="#2964CD" stroke-width="2" style="fill:rgb(13, 21, 48);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- Icon background circle -->
+    <circle cx="200" cy="240" r="35" fill="#2964CD" opacity="0.2" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- D letter -->
+    <text x="200" y="250" font-size="48" font-weight="bold" text-anchor="middle" fill="#2964CD" font-family="IBM Plex Mono, monospace" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;IBM Plex Mono&quot;, monospace;font-size:48px;font-weight:700;text-anchor:middle;dominant-baseline:auto">D</text>
+    
+    <!-- Title -->
+    <text x="200" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:20px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+      Demand
+    </text>
+    
+    <!-- Description -->
+    <text x="100" y="345" font-size="14" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" text-anchor="start" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <tspan x="100" dy="0" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">Is there real buyer</tspan>
+      <tspan x="100" dy="18" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">interest? Check:</tspan>
+      <tspan x="100" dy="24" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Google Trends</tspan>
+      <tspan x="100" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Amazon search</tspan>
+      <tspan x="100" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Etsy volume</tspan>
+      <tspan x="100" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Social mentions</tspan>
+    </text>
+    
+    <!-- Time -->
+    <text x="200" y="525" font-size="12" text-anchor="middle" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" font-style="italic" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">
+      30-45 min research
+    </text>
+  </g>
+  
+  <!-- C - Competition -->
+  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Card background -->
+    <rect x="360" y="190" width="240" height="380" rx="12" fill="#0D1530" stroke="#2964CD" stroke-width="2" style="fill:rgb(13, 21, 48);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- Icon background circle -->
+    <circle cx="480" cy="240" r="35" fill="#2964CD" opacity="0.2" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- C letter -->
+    <text x="480" y="250" font-size="48" font-weight="bold" text-anchor="middle" fill="#2964CD" font-family="IBM Plex Mono, monospace" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;IBM Plex Mono&quot;, monospace;font-size:48px;font-weight:700;text-anchor:middle;dominant-baseline:auto">C</text>
+    
+    <!-- Title -->
+    <text x="480" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:20px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+      Competition
+    </text>
+    
+    <!-- Description -->
+    <text x="380" y="345" font-size="14" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" text-anchor="start" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <tspan x="380" dy="0" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">How saturated is</tspan>
+      <tspan x="380" dy="18" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">the market? Survey:</tspan>
+      <tspan x="380" dy="24" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Amazon products</tspan>
+      <tspan x="380" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Redbubble count</tspan>
+      <tspan x="380" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Etsy listings</tspan>
+      <tspan x="380" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Competitor strategies</tspan>
+    </text>
+    
+    <!-- Time -->
+    <text x="480" y="525" font-size="12" text-anchor="middle" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" font-style="italic" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">
+      45-60 min research
+    </text>
+  </g>
+  
+  <!-- E - Evergreen -->
+  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Card background -->
+    <rect x="640" y="190" width="240" height="380" rx="12" fill="#0D1530" stroke="#2964CD" stroke-width="2" style="fill:rgb(13, 21, 48);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- Icon background circle -->
+    <circle cx="760" cy="240" r="35" fill="#2964CD" opacity="0.2" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- E letter -->
+    <text x="760" y="250" font-size="48" font-weight="bold" text-anchor="middle" fill="#2964CD" font-family="IBM Plex Mono, monospace" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;IBM Plex Mono&quot;, monospace;font-size:48px;font-weight:700;text-anchor:middle;dominant-baseline:auto">E</text>
+    
+    <!-- Title -->
+    <text x="760" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:20px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+      Evergreen
+    </text>
+    
+    <!-- Description -->
+    <text x="660" y="345" font-size="14" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" text-anchor="start" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <tspan x="660" dy="0" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">Will this niche last</tspan>
+      <tspan x="660" dy="18" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">6+ months? Look at:</tspan>
+      <tspan x="660" dy="24" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• 5-year trends</tspan>
+      <tspan x="660" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Reddit history</tspan>
+      <tspan x="660" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Seasonality patterns</tspan>
+      <tspan x="660" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Product lifecycles</tspan>
+    </text>
+    
+    <!-- Time -->
+    <text x="760" y="525" font-size="12" text-anchor="middle" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" font-style="italic" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">
+      30-40 min research
+    </text>
+  </g>
+  
+  <!-- B - Brandability -->
+  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Card background -->
+    <rect x="920" y="190" width="240" height="380" rx="12" fill="#0D1530" stroke="#2964CD" stroke-width="2" style="fill:rgb(13, 21, 48);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- Icon background circle -->
+    <circle cx="1040" cy="240" r="35" fill="#2964CD" opacity="0.2" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.2;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- B letter -->
+    <text x="1040" y="250" font-size="48" font-weight="bold" text-anchor="middle" fill="#2964CD" font-family="IBM Plex Mono, monospace" style="fill:rgb(41, 100, 205);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;IBM Plex Mono&quot;, monospace;font-size:48px;font-weight:700;text-anchor:middle;dominant-baseline:auto">B</text>
+    
+    <!-- Title -->
+    <text x="1040" y="310" font-size="20" font-weight="bold" text-anchor="middle" fill="#FFFFFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:20px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+      Brandability
+    </text>
+    
+    <!-- Description -->
+    <text x="940" y="345" font-size="14" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" text-anchor="start" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <tspan x="940" dy="0" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">Can you own a unique</tspan>
+      <tspan x="940" dy="18" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:14px;font-weight:400;text-anchor:start;dominant-baseline:auto">angle? Analyze:</tspan>
+      <tspan x="940" dy="24" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Design styles</tspan>
+      <tspan x="940" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Messaging gaps</tspan>
+      <tspan x="940" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Target audiences</tspan>
+      <tspan x="940" dy="18" font-size="12" fill="#5B9BFF" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">• Sub-niche opportunities</tspan>
+    </text>
+    
+    <!-- Time -->
+    <text x="1040" y="525" font-size="12" text-anchor="middle" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" font-style="italic" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;font-style:italic;text-anchor:middle;dominant-baseline:auto">
+      40-50 min research
+    </text>
+  </g>
+  
+  <!-- Bottom section - Total time & CTA -->
+  <g style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- Total time info box -->
+    <rect x="200" y="605" width="800" height="50" rx="8" fill="#2964CD" opacity="0.15" stroke="#2964CD" stroke-width="1" style="fill:rgb(41, 100, 205);stroke:rgb(41, 100, 205);color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    <!-- Total time text -->
+    <text x="600" y="635" font-size="18" font-weight="bold" text-anchor="middle" fill="#5B9BFF" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:18px;font-weight:700;text-anchor:middle;dominant-baseline:auto">
+      Total: 3-3.5 hours per niche  •  312+ hours annually doing this manually
+    </text>
+  </g>
+  
+  <!-- PODTrackerPRO mention at top right -->
+  <text x="1120" y="45" font-size="12" text-anchor="end" fill="#7A9AD4" font-family="DM Sans, Arial, sans-serif" style="fill:rgb(122, 154, 212);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:end;dominant-baseline:auto">
+    PODTrackerPRO
+  </text>
+  <text x="1120" y="62" font-size="11" text-anchor="end" fill="#5B9BFF" font-family="DM Sans, Arial, sans-serif" font-style="italic" style="fill:rgb(91, 155, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;DM Sans&quot;, Arial, sans-serif;font-size:11px;font-weight:400;font-style:italic;text-anchor:end;dominant-baseline:auto">
+    AI does this in seconds
+  </text>
+</svg>
