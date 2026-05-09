@@ -51,7 +51,21 @@ $contactValues = [
 ];
 ?>
 
-<?php include 'includes/nav-alt.html'; ?>
+<nav>
+<a href="index.html" class="nav-logo">
+<img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image">
+</a>
+  <ul class="nav-links">
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a class="btn-ghost is-disabled" aria-disabled="true">Coming Soon!</a>
+    <a class="btn-primary is-disabled" aria-disabled="true">Coming Soon!</a>
+  </div>
+</nav>
 
 <div class="page-hero reveal">
   <div class="section-label">Contact</div>
@@ -106,8 +120,20 @@ $contactValues = [
   </div>
 </section>
 
-<?php include 'includes/footer.html'; ?>
-<?php include 'includes/footer-bottom.html'; ?>
+<footer>
+  <div class="footer-brand">
+<a href="index.html" class="nav-logo"><img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image"></a>
+    <p>The command center for print-on-demand sellers.</p>
+  </div>
+  <div><div class="footer-col-title">Product</div><ul class="footer-links"><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+  <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+</footer>
+<div class="footer-bottom">
+  <p>&copy; 2026 PODTrackerPRO. All rights reserved.</p>
+  <p style="color:var(--teal);font-size:12px;">Built by a POD seller, for POD sellers.</p>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
 

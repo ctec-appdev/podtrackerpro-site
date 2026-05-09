@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +20,21 @@
     border-radius: 24px;
     padding: 40px;
     box-shadow: 0 24px 70px rgba(0,0,0,0.22);
+  }
+  .article-feature {
+    margin: 0 0 28px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(41,100,205,0.14);
+    background: rgba(255,255,255,0.02);
+    max-height: 360px;
+  }
+  .article-feature img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
   .article-meta {
     display: flex;
@@ -143,7 +158,21 @@
 </head>
 <body>
 
-<?php include 'includes/nav.html'; ?>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image">
+  </a>
+  <ul class="nav-links">
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://app.podtrackerpro.com/api/auth/signin?callbackUrl=%2Fdashboard" class="btn-ghost">Log In</a>
+    <a href="https://app.podtrackerpro.com/signup" class="btn-primary">Start Free</a>
+  </div>
+</nav>
 
 <div class="page-hero reveal" style="padding-bottom:36px;">
   <div class="section-label">Niche Guide</div>
@@ -160,6 +189,10 @@
         <span>Niche Guide</span>
         <span>&middot;</span>
         <span>9 min read</span>
+      </div>
+
+      <div class="article-feature">
+        <img src="images/blog/blog_hero_evergreen-niches-v2.png" alt="Evergreen Print on Demand Niches feature image">
       </div>
 
       <p class="article-lead">Every print-on-demand seller dreams of finding that perfect niche that keeps generating sales long after the initial boom fades. While chasing trends can deliver quick wins, true stability in your business comes from tapping into <strong>evergreen niches</strong> &mdash; categories that stay relevant year after year.</p>
@@ -254,13 +287,25 @@
     <h2 class="section-title">Track niches that keep selling.</h2>
     <p class="section-sub">Use PODTrackerPRO to monitor evergreen niche performance and identify steady opportunities.</p>
     <div class="final-cta-actions">
-      <a class="btn-hero is-disabled" tabindex="-1" aria-disabled="true">Sign Up</a>
+      <a class="btn-hero is-disabled" aria-disabled="true">Sign Up</a>
       <a href="features.html" class="btn-hero-secondary">See the Features -&gt;</a>
     </div>
   </div>
 </section>
 
-<?php include 'includes/footer.html'; ?>
-<?php include 'includes/footer-bottom.html'; ?>
+<footer>
+  <div class="footer-brand">
+    <a href="index.html" class="nav-logo"><img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image"></a>
+    <p>The command center for print-on-demand sellers.</p>
+  </div>
+  <div><div class="footer-col-title">Product</div><ul class="footer-links"><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+  <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+</footer>
+<div class="footer-bottom">
+  <p>&copy; 2026 PODTrackerPRO. All rights reserved.</p>
+  <p style="color:var(--teal);font-size:12px;">Built by a POD seller, for POD sellers.</p>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>

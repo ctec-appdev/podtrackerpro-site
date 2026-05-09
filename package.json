@@ -2,9 +2,8 @@
   "name": "podtrackerpro-site",
   "version": "1.0.0",
   "description": "Static marketing site for PODTrackerPRO (HTML, CSS, JS, optional PHP contact handler).",
+  "main": "index.js",
   "scripts": {
-    "preprocess": "node scripts/preprocess.js",
-    "pretest": "node scripts/preprocess.js",
     "test": "playwright test",
     "test:links": "playwright test tests/links.spec.js"
   },
@@ -22,7 +21,6 @@
   "homepage": "https://github.com/ctec-appdev/podtrackerpro-site#readme",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "http-server": "^14.1.1",
-    "sharp": "^0.34.5"
+    "http-server": "^14.1.1"
   }
 }

@@ -1,13 +1,8 @@
-
-RewriteOptions inherit
 # PODTrackerPRO — Apache Configuration for ShockHosting
 
 # Enable rewrite engine
 Options +FollowSymLinks
 RewriteEngine On
-
-# Process .html files as PHP so shared nav/footer includes work
-AddType application/x-httpd-php .html
 
 # Force HTTPS
 RewriteCond %{HTTPS} off
@@ -46,5 +41,4 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
   Header set X-Content-Type-Options "nosniff"
   Header set X-Frame-Options "SAMEORIGIN"
   Header set X-XSS-Protection "1; mode=block"
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
 </IfModule>

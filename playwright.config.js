@@ -16,7 +16,7 @@ module.exports = defineConfig({
   webServer: process.env.BASE_URL
     ? undefined
     : {
-        command: 'npx http-server dist -p 4173 -c-1',
+        command: 'npx http-server . -p 4173 -c-1',
         url: baseURL,
         reuseExistingServer: true,
         timeout: 120_000,

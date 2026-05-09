@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,6 +20,21 @@
     border-radius: 24px;
     padding: 40px;
     box-shadow: 0 24px 70px rgba(0,0,0,0.22);
+  }
+  .article-feature {
+    margin: 0 0 28px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(41,100,205,0.14);
+    background: rgba(255,255,255,0.02);
+    max-height: 360px;
+  }
+  .article-feature img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
   }
   .article-meta {
     display: flex;
@@ -159,7 +174,21 @@
 </head>
 <body>
 
-<?php include 'includes/nav.html'; ?>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image">
+  </a>
+  <ul class="nav-links">
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://app.podtrackerpro.com/api/auth/signin?callbackUrl=%2Fdashboard" class="btn-ghost">Log In</a>
+    <a href="https://app.podtrackerpro.com/signup" class="btn-primary">Start Free</a>
+  </div>
+</nav>
 
 <div class="page-hero reveal" style="padding-bottom:36px;">
   <div class="section-label">Competition Guide</div>
@@ -176,6 +205,10 @@
         <span>Competition</span>
         <span>&middot;</span>
         <span>10 min read</span>
+      </div>
+
+      <div class="article-feature">
+        <img src="images/blog/blog_hero_niche-saturation.png" alt="How to Tell if a POD Niche Is Too Saturated feature image">
       </div>
 
       <p class="article-lead">Every print-on-demand seller faces the same dilemma: should you jump into a popular niche or look for something new? While high demand feels promising, too much competition can make it almost impossible to stand out.</p>
@@ -309,13 +342,25 @@
     <h2 class="section-title">Compare niches with real data.</h2>
     <p class="section-sub">Use PODTrackerPRO to track saturation trends and find profitable niche opportunities.</p>
     <div class="final-cta-actions">
-      <a class="btn-hero is-disabled" tabindex="-1" aria-disabled="true">Sign Up</a>
+      <a class="btn-hero is-disabled" aria-disabled="true">Sign Up</a>
       <a href="features.html" class="btn-hero-secondary">See the Features -&gt;</a>
     </div>
   </div>
 </section>
 
-<?php include 'includes/footer.html'; ?>
-<?php include 'includes/footer-bottom.html'; ?>
+<footer>
+  <div class="footer-brand">
+    <a href="index.html" class="nav-logo"><img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO" class="nav-logo-image"></a>
+    <p>The command center for print-on-demand sellers.</p>
+  </div>
+  <div><div class="footer-col-title">Product</div><ul class="footer-links"><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+  <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+</footer>
+<div class="footer-bottom">
+  <p>&copy; 2026 PODTrackerPRO. All rights reserved.</p>
+  <p style="color:var(--teal);font-size:12px;">Built by a POD seller, for POD sellers.</p>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>

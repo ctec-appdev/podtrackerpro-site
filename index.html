@@ -1,23 +1,31 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<!-- // APPLIED: lang attribute -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PODTrackerPRO — Print on Demand Tracker & Research Tool for Sellers</title>
+<!-- // APPLIED: title tag -->
 <meta name="description" content="PODTrackerPRO is the all-in-one dashboard for print-on-demand sellers. Track designs, monitor sales across Amazon Merch, Redbubble, Etsy & Spring, and find profitable niches with AI-powered research.">
+<!-- // APPLIED: meta description -->
 <link rel="canonical" href="https://www.podtrackerpro.com/">
+<!-- // APPLIED: canonical tag -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.podtrackerpro.com/">
 <meta property="og:title" content="PODTrackerPRO — Print on Demand Tracker & Research Tool">
 <meta property="og:description" content="Track designs, monitor sales across all POD platforms, and find profitable niches with AI research. The command center for serious POD sellers.">
 <meta property="og:image" content="https://www.podtrackerpro.com/images/PODTrackerPRO_logo.png">
 <meta property="og:site_name" content="PODTrackerPRO">
+<!-- // APPLIED: open graph tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PODTrackerPRO — Print on Demand Tracker & Research Tool">
 <meta name="twitter:description" content="Track designs, monitor sales across all POD platforms, and find profitable niches with AI research.">
 <meta name="twitter:image" content="https://www.podtrackerpro.com/images/PODTrackerPRO_logo.png">
+<!-- // APPLIED: twitter card tags -->
 <meta name="robots" content="index, follow">
+<!-- // APPLIED: robots meta -->
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<!-- // APPLIED: sitemap reference -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -67,10 +75,26 @@
   ]
 }
 </script>
+<!-- // APPLIED: JSON-LD structured data -->
 </head>
 <body>
 
-<?php include 'includes/nav.html'; ?>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <!-- // APPLIED: logo image alt text -->
+    <img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO logo" class="nav-logo-image">
+  </a>
+  <ul class="nav-links">
+    <li><a href="features.html">Features</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="https://app.podtrackerpro.com/api/auth/signin?callbackUrl=%2Fdashboard" class="btn-ghost">Log In</a>
+    <a href="https://app.podtrackerpro.com/signup" class="btn-primary">Start Free</a>
+  </div>
+</nav>
 
 <section class="hero">
   <div class="hero-badge">
@@ -110,7 +134,7 @@
           </div>
           <div class="sidebar-section-row">
             <div class="sidebar-section">Research</div>
-            <div class="sidebar-caret">?</div>
+            <div class="sidebar-caret">▾</div>
           </div>
           <div class="sidebar-item nested">
             <div class="sidebar-icon ring"></div>
@@ -134,11 +158,11 @@
           </div>
           <div class="sidebar-section-row">
             <div class="sidebar-section">Design</div>
-            <div class="sidebar-caret">?</div>
+            <div class="sidebar-caret">▸</div>
           </div>
           <div class="sidebar-section-row">
             <div class="sidebar-section">Listings</div>
-            <div class="sidebar-caret">?</div>
+            <div class="sidebar-caret">▸</div>
           </div>
           <div class="sidebar-item footer-link">
             <div class="sidebar-icon question">?</div>
@@ -386,7 +410,7 @@
         <li><span class="dash">-</span> Niche research tools</li>
         <li><span class="dash">-</span> SEO copy generator</li>
       </ul>
-      <a class="btn-plan outline is-disabled" tabindex="-1" aria-disabled="true">Choose Free</a>
+      <a class="btn-plan outline is-disabled" aria-disabled="true">Choose Free</a>
     </div>
     <div class="pricing-card featured">
       <div class="pricing-badge">Most Popular</div>
@@ -404,7 +428,7 @@
         <li><span class="ck">+</span> Advanced analytics</li>
         <li><span class="dash">-</span> SEO copy generator</li>
       </ul>
-      <a class="btn-plan solid is-disabled" tabindex="-1" aria-disabled="true">Choose Starter</a>
+      <a class="btn-plan solid is-disabled" aria-disabled="true">Choose Starter</a>
     </div>
     <div class="pricing-card">
       <div class="pricing-plan">Business</div>
@@ -421,7 +445,7 @@
         <li><span class="ck">+</span> Early access to new features</li>
         <li><span class="ck">+</span> Export reports (CSV)</li>
       </ul>
-      <a class="btn-plan outline is-disabled" tabindex="-1" aria-disabled="true">Choose Business</a>
+      <a class="btn-plan outline is-disabled" aria-disabled="true">Choose Business</a>
     </div>
   </div>
 </section>
@@ -432,15 +456,46 @@
     <h2 class="section-title">Stop guessing. Start growing.</h2>
     <p class="section-sub">Join hundreds of POD sellers who've replaced their scattered spreadsheets with a real command center. It takes 2 minutes to set up.</p>
     <div class="final-cta-actions">
-      <a class="btn-hero is-disabled" tabindex="-1" aria-disabled="true">Start Free</a>
+      <a class="btn-hero is-disabled" aria-disabled="true">Start Free</a>
       <a href="pricing.html" class="btn-hero-secondary">View Pricing</a>
     </div>
     <p class="final-note">Free plan available forever &middot; Starter from $9.99/mo &middot; Business from $19.99/mo</p>
   </div>
 </section>
 
-<?php include 'includes/footer.html'; ?>
-<?php include 'includes/footer-bottom.html'; ?>
+<footer>
+  <div class="footer-brand">
+    <a href="index.html" class="nav-logo">
+        <!-- // APPLIED: logo image alt text -->
+        <img src="images/PODTrackerPRO_logo.png" alt="PODTrackerPRO logo" class="nav-logo-image">
+    </a>
+    <p>The command center for print-on-demand sellers. Track designs, monitor sales, and scale smarter across every platform.</p>
+  </div>
+  <div>
+    <div class="footer-col-title">Product</div>
+    <ul class="footer-links">
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Changelog</a></li>
+      <li><a href="features.html">Roadmap</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Company</div>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>&copy; 2026 PODTrackerPRO. All rights reserved.</p>
+  <p style="color:var(--teal);font-size:12px;">Built by a POD seller, for POD sellers.</p>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
 
