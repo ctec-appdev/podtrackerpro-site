@@ -48,4 +48,8 @@ runs:
           fi
         done <<< "$PATTERNS"
 
-        echo "changed=$match" >> "$GITHUB_OUTPUT"
+        if [ "$match" = "1" ]; then
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+        fi
