@@ -6,4 +6,6 @@ node_modules/
 
 # Temporary/generated export folders
 pages/
+
+# Preprocessed test output
 dist/

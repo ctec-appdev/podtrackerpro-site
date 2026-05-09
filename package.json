@@ -4,6 +4,8 @@
   "description": "Static marketing site for PODTrackerPRO (HTML, CSS, JS, optional PHP contact handler).",
   "main": "index.js",
   "scripts": {
+    "preprocess": "node scripts/preprocess.js",
+    "pretest": "node scripts/preprocess.js",
     "test": "playwright test",
     "test:links": "playwright test tests/links.spec.js"
   },
