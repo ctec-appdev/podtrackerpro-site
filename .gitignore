@@ -1,6 +1,9 @@
 ﻿Thumbs.db
 Desktop.ini
 
+# Dependencies
+node_modules/
+
 # Temporary/generated export folders
 pages/
 dist/
