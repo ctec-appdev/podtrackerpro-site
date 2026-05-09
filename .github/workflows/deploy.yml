@@ -65,4 +65,4 @@ jobs:
       - name: Push to cPanel
         run: |
           git remote add cpanel ${{ secrets.CPANEL_REMOTE_URL }}
-          git push cpanel main:master
+          git push cpanel main
