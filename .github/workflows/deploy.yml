@@ -1,0 +1,71 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual deploy'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      should_deploy: ${{ steps.check.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for relevant changes
+        id: check
+        uses: ./.github/actions/has-changes
+        with:
+          patterns: |
+            \.html$
+            \.php$
+            \.css$
+            \.js$
+            \.yml$
+            \.htaccess$
+            includes/
+            scripts/
+            images/
+
+  deploy:
+    needs: detect
+    if: needs.detect.outputs.should_deploy == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ssh-key: ${{ secrets.CPANEL_SSH_KEY }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Preprocess (resolve PHP includes)
+        run: npm run preprocess
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium
+
+      - name: Run link checks
+        run: npm test
+
+      - name: Push to cPanel
+        run: |
+          git remote add cpanel ${{ secrets.CPANEL_REMOTE_URL }}
+          git push cpanel main

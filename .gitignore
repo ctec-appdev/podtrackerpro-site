@@ -1,5 +1,11 @@
 ﻿Thumbs.db
 Desktop.ini
 
-# Temporary/generated export folder
-{css,js,images,pages}/
+# Dependencies
+node_modules/
+
+# Temporary/generated export folders
+pages/
+
+# Preprocessed test output
+dist/

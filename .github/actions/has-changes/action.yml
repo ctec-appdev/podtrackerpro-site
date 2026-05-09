@@ -1,0 +1,51 @@
+name: 'Has Changes'
+description: 'Check if any files matching given patterns have changed between two refs'
+inputs:
+  patterns:
+    description: 'Newline-separated list of glob patterns to check'
+    required: true
+  base-ref:
+    description: 'Git ref to compare against (default: HEAD~1 for push, merge-base for PR)'
+    required: false
+    default: ''
+outputs:
+  changed:
+    description: 'Whether any matching files changed (true/false)'
+    value: ${{ steps.check.outputs.changed }}
+runs:
+  using: 'composite'
+  steps:
+    - id: check
+      shell: bash
+      env:
+        PATTERNS: ${{ inputs.patterns }}
+        BASE_REF: ${{ inputs.base-ref }}
+      run: |
+        set -e
+        if [ -n "$BASE_REF" ]; then
+          base="$BASE_REF"
+        elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+          base="origin/${{ github.base_ref }}"
+        else
+          base="HEAD~1"
+        fi
+
+        # Fetch base ref if not present
+        git fetch --depth=1 origin "$base" 2>/dev/null || true
+
+        changed_files=$(git diff --name-only "$base"...HEAD 2>/dev/null || git diff --name-only HEAD~1...HEAD 2>/dev/null || echo "")
+
+        echo "Changed files:"
+        echo "$changed_files"
+
+        match=0
+        while IFS= read -r pattern; do
+          [ -z "$pattern" ] && continue
+          echo "Checking pattern: $pattern"
+          if echo "$changed_files" | grep -E "$pattern" >/dev/null 2>&1; then
+            echo "Match found for pattern: $pattern"
+            match=1
+          fi
+        done <<< "$PATTERNS"
+
+        echo "changed=$match" >> "$GITHUB_OUTPUT"
