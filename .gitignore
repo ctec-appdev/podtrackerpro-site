@@ -5,9 +5,6 @@ Desktop.ini
 node_modules/
 
 # Temporary/generated export folders
-css/
-js/
-images/
 pages/
 
 # Preprocessed test output
