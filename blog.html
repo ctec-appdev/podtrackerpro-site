@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - PODTrackerPRO</title>
+<meta name="description" content="Tips, guides, and insights for print-on-demand sellers. Grow smarter on Amazon Merch, Redbubble, Etsy, and Spring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+  .blog-card { background: var(--navy-mid); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform 0.2s, border-color 0.2s; display: flex; flex-direction: column; }
+  .blog-card:hover { transform: translateY(-4px); border-color: rgba(41,100,205,0.25); }
+  .blog-thumb { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+  .blog-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .blog-content { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+  .blog-category { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
+        .blog-title { font-family: 'Rubik', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35; margin-bottom: 12px; color: var(--white); }
+  .blog-excerpt { font-size: 13px; color: var(--white-dim); line-height: 1.65; flex: 1; margin-bottom: 20px; }
+  .blog-meta { font-size: 11px; color: rgba(240,244,255,0.3); display: flex; align-items: center; gap: 12px; }
+  .blog-title a { color: inherit; text-decoration: none; }
+  .blog-title a:hover { color: var(--teal); }
+  .blog-read { margin-top: 16px; font-size: 13px; font-weight: 600; color: var(--teal); text-decoration: none; display: inline-block; }
+  @media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JXQ4XZV2HN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JXQ4XZV2HN');
+</script>
+</head>
+<body>
+
+<?php include 'includes/nav.html'; ?>
+
+<div class="page-hero reveal">
+  <div class="section-label">Blog</div>
+  <h1 class="section-title" style="font-size:clamp(36px,5vw,60px);letter-spacing:-2px;">POD insights, tips,<br>and strategies.</h1>
+  <p class="section-sub" style="margin:0 auto;text-align:center;">Practical guides for print-on-demand sellers who want to grow smarter, not just harder.</p>
+</div>
+
+<section style="padding-top:40px;">
+  <div class="blog-grid reveal">
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_niche-saturation.webp" alt="Niche Saturation feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Competition</div><div class="blog-title"><a href="blog-niche-saturation.html">How to Tell if a POD Niche Is Too Saturated</a></div><div class="blog-excerpt">Learn how to identify if your print-on-demand niche is too saturated, how to evaluate competition vs. demand, and find profitable niche opportunities.</div><a class="blog-read" href="blog-niche-saturation.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>10 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_organize-business.webp" alt="Organize Your Print on Demand Business feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Organization</div><div class="blog-title"><a href="blog-organize-business.html">How to Organize Your Print on Demand Business</a></div><div class="blog-excerpt">Learn how to organize your print-on-demand business like a pro. Build systems for niches, design ideas, keywords, listing briefs, and daily workflow.</div><a class="blog-read" href="blog-organize-business.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>11 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_evergreen-niches-v2.webp" alt="Evergreen Niches feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Niche Guide</div><div class="blog-title"><a href="blog-evergreen-niches.html">Evergreen Print on Demand Niches That Keep Selling</a></div><div class="blog-excerpt">Discover timeless, profitable print-on-demand niches that never go out of style. Learn how to identify evergreen categories that deliver consistent sales.</div><a class="blog-read" href="blog-evergreen-niches.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>9 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_pod-seo.webp" alt="Print on Demand SEO feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">SEO</div><div class="blog-title"><a href="blog-pod-seo.html">Print on Demand SEO for Etsy, Amazon Merch, and Redbubble</a></div><div class="blog-excerpt">Learn how to optimize your print-on-demand listings for Etsy, Amazon Merch, and Redbubble. Compare keyword strategies and discover platform-specific SEO tips.</div><a class="blog-read" href="blog-pod-seo.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>14 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_pod-workflow-v3.webp" alt="POD Business Workflow feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Workflow</div><div class="blog-title"><a href="blog-pod-workflow.html">POD Business Workflow From Idea to Listing</a></div><div class="blog-excerpt">Learn a step-by-step POD workflow to move faster, stay organized, and turn ideas into optimized listings.</div><a class="blog-read" href="blog-pod-workflow.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>13 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_validate-niche-v2.webp" alt="Validate a POD Niche feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Validation</div><div class="blog-title"><a href="blog-validate-niche.html">How to Validate a POD Niche Before Designing</a></div><div class="blog-excerpt">Learn how to validate a POD niche before designing using a practical framework based on demand, competition, fit, and keyword relevance.</div><a class="blog-read" href="blog-validate-niche.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>11 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_track-ideas.webp" alt="Track POD Ideas feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Workflow</div><div class="blog-title"><a href="blog-track-ideas.html">Best Way to Track POD Ideas, Keywords, and Listings</a></div><div class="blog-excerpt">Learn how to manage your POD ideas, keywords, and listings so you can move faster, make better decisions, and scale.</div><a class="blog-read" href="blog-track-ideas.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>10 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blo_hero_beginner_mistakes.webp" alt="Beginner Mistakes feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Beginner Guide</div><div class="blog-title"><a href="blog-beginner-mistakes.html">7 Print on Demand Mistakes Beginners Make</a></div><div class="blog-excerpt">Learn the 7 most common print on demand mistakes beginners make and how to fix them with a more structured approach.</div><a class="blog-read" href="blog-beginner-mistakes.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>12 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/blog/blog_hero_winning-niches.webp" alt="Winning POD Niches feature image" loading="lazy"></div><div class="blog-content"><div class="blog-category">Research</div><div class="blog-title"><a href="blog-winning-niches.html">How to Find Winning Print on Demand Niches</a></div><div class="blog-excerpt">Learn a practical, repeatable niche research process to consistently uncover opportunities and build a pipeline of POD ideas.</div><a class="blog-read" href="blog-winning-niches.html">Read Article -&gt;</a><div class="blog-meta"><span>April 2026</span><span>&middot;</span><span>15 min read</span></div></div></article>
+    <article class="blog-card"><div class="blog-thumb"><img src="images/dceb_blog_feature_image.svg" alt="DCEB Framework feature image"></div><div class="blog-content"><div class="blog-category">Research</div><div class="blog-title"><a href="blog-dceb-framework.html">How to Research a Niche: The DCEB Framework (And Why Manual Research Takes Forever)</a></div><div class="blog-excerpt">Learn how to score Demand, Competition, Evergreen, and Brandability manually, calculate a DCEB verdict, and see why most POD sellers eventually automate the process.</div><a class="blog-read" href="blog-dceb-framework.html">Read Article -&gt;</a><div class="blog-meta"><span>March 2026</span><span>&middot;</span><span>18 min read</span></div></div></article>
+    <article class="blog-card" style="display: none;"><div class="blog-thumb" style="background:linear-gradient(135deg,rgba(245,166,35,0.1),rgba(245,166,35,0.03));">CP</div><div class="blog-content"><div class="blog-category">Comparison</div><div class="blog-title">Amazon Merch vs. Redbubble: Which Platform Pays More in 2026?</div><div class="blog-excerpt">Both platforms have loyal audiences but very different royalty structures, approval processes, and growth ceilings. We break down the real numbers so you can make a smarter platform bet.</div><div class="blog-meta"><span>February 2026</span><span>&middot;</span><span>12 min read</span></div></div></article>
+    <article class="blog-card" style="display: none;"><div class="blog-thumb" style="background:linear-gradient(135deg,rgba(108,99,255,0.1),rgba(108,99,255,0.03));">KR</div><div class="blog-content"><div class="blog-category">Research</div><div class="blog-title">The POD Seller's Guide to Niche Research in 2026</div><div class="blog-excerpt">Niche selection is the highest-leverage decision a POD seller makes. A mediocre design in the right niche will outperform a great design in an oversaturated one. Here's how to find gold.</div><div class="blog-meta"><span>February 2026</span><span>&middot;</span><span>10 min read</span></div></div></article>
+    <article class="blog-card" style="display: none;"><div class="blog-thumb" style="background:linear-gradient(135deg,rgba(41,100,205,0.08),rgba(0,0,0,0));">DW</div><div class="blog-content"><div class="blog-category">Design</div><div class="blog-title">From Idea to Live Listing: A POD Design Workflow That Scales</div><div class="blog-excerpt">Most sellers have a chaotic design process that works fine at 20 listings but breaks down at 200. Here's a repeatable system to take designs from niche idea to live listing consistently.</div><div class="blog-meta"><span>January 2026</span><span>&middot;</span><span>9 min read</span></div></div></article>
+    <article class="blog-card" style="display: none;"><div class="blog-thumb" style="background:linear-gradient(135deg,rgba(255,107,107,0.08),rgba(0,0,0,0));">IM</div><div class="blog-content"><div class="blog-category">Operations</div><div class="blog-title">Why Your POD Inventory System Is Costing You Sales</div><div class="blog-excerpt">If you can't answer how many of your Etsy listings are currently active versus pending in under 10 seconds, your inventory system is failing you. Here's how to fix it.</div><div class="blog-meta"><span>January 2026</span><span>&middot;</span><span>7 min read</span></div></div></article>
+    <article class="blog-card" style="display: none;"><div class="blog-thumb" style="background:linear-gradient(135deg,rgba(41,100,205,0.06),rgba(0,0,0,0));">SEO</div><div class="blog-content"><div class="blog-category">SEO</div><div class="blog-title">How to Write Etsy Listings That Actually Rank</div><div class="blog-excerpt">Etsy's algorithm rewards listings that are optimized for both search and conversion. Here's the title and tag formula that's working for top POD sellers right now.</div><div class="blog-meta"><span>December 2025</span><span>&middot;</span><span>11 min read</span></div></div></article>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="reveal">
+    <div class="section-label">Ready to Track Smarter?</div>
+    <h2 class="section-title">Put these strategies to work.</h2>
+    <p class="section-sub">PODTrackerPRO gives you the dashboard to actually implement what you're learning. Start free.</p>
+    <div class="final-cta-actions">
+      <a class="btn-hero is-disabled" tabindex="-1" aria-disabled="true">Coming Soon!</a>
+      <a href="features.html" class="btn-hero-secondary">See the Features -&gt;</a>
+    </div>
+  </div>
+</section>
+
+<?php include 'includes/footer.html'; ?>
+<?php include 'includes/footer-bottom.html'; ?>
+</body>
+</html>
+
+
+

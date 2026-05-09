@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ctecreat/public_html/podtrackerpro/
+    - /bin/cp -R * $DEPLOYPATH
