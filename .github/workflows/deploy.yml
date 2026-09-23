@@ -59,6 +59,11 @@ jobs:
       - name: Push to cPanel
         run: |
           mkdir -p ~/.ssh
+          ssh-add -l || true
+          if ! ssh-add -l >/dev/null 2>&1; then
+            eval "$(ssh-agent -s)"
+            printf '%s\n' "${{ secrets.CPANEL_SSH_KEY }}" | ssh-add -
+          fi
           CPANEL_HOST="$(echo '${{ secrets.CPANEL_REMOTE_URL }}' | sed -e 's|^ssh://||' -e 's|/.*$||')"
           ssh -o StrictHostKeyChecking=accept-new -o BatchMode=yes -o ConnectTimeout=20 "$CPANEL_HOST" true
           git remote add cpanel ${{ secrets.CPANEL_REMOTE_URL }}
