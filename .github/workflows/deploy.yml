@@ -20,7 +20,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Check for relevant changes
         id: check
         uses: ./.github/actions/has-changes
@@ -46,23 +45,20 @@ jobs:
         with:
           fetch-depth: 0
           ssh-key: ${{ secrets.CPANEL_SSH_KEY }}
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-
       - name: Install dependencies
         run: npm ci
-
       - name: Install Playwright browsers
         run: npx playwright install chromium
-
       - name: Run link checks
         run: npm test
-
       - name: Push to cPanel
         run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -t ed25519 ctecreative.com >> ~/.ssh/known_hosts
           git remote add cpanel ${{ secrets.CPANEL_REMOTE_URL }}
           git push cpanel main
