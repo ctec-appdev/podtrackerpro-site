@@ -59,6 +59,6 @@ jobs:
       - name: Push to cPanel
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -t ed25519 ctecreative.com >> ~/.ssh/known_hosts
+          ssh-keyscan ctecreative.com >> ~/.ssh/known_hosts
           git remote add cpanel ${{ secrets.CPANEL_REMOTE_URL }}
           git push cpanel main
