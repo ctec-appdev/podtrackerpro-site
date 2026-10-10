@@ -1,13 +1,12 @@
-name: CI
+name: CI — Link Check
 
 on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
-  build-and-test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,14 +15,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version: "20"
+          cache: "npm"
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install chromium
+      - name: Install Playwright
+        run: npx playwright install chromium --with-deps
 
       - name: Run link checks
         run: npm test
